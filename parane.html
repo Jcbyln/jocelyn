@@ -1,44 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Web Design</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.body.classList.add("fade-in");
-            
-            const links = document.querySelectorAll("a");
-            links.forEach(link => {
-                link.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    const url = this.getAttribute("href");
-                    document.body.classList.add("fade-out");
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Web Design</title>
+  <style>
     
-                    setTimeout(() => {
-                        window.location.href = url;
-                    }, 500); 
-                });
-            });
-        });
-     </script>
+    body {
+      font-family: 'Georgia', serif; 
+      background-color: #f9f1e3; 
+      color: #4f4a46; 
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-image: url('https://www.transparenttextures.com/patterns/old-wall-2.png');
+      background-repeat: repeat;
+    }
+
+    
+    header {
+      background-color: #bfa68d; 
+      padding: 50px 0;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      font-style: italic;
+      font-family: 'Times New Roman', serif;
+    }
+
+    section {
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-family: 'Georgia', serif;
+      color: #5f4b3a;
+    }
+
+    section p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #3e3b3b;
+    }
+
+    h2, h3 {
+      font-size: 24px;
+      font-family: 'Georgia', serif;
+      color: #5f4b3a;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: #8b7e6f;
+    }
+
+    .buttonfb, .buttoninstagram, .Go-to-the-next-page {
+      background-color: #8f6a33; 
+      color: #fff;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 25px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .buttonfb:hover, .buttoninstagram:hover, .Go-to-the-next-page:hover {
+      background-color: #7a5730; 
+    }
+
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #bfa68d;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      section h2 {
+        font-size: 24px;
+      }
+
+      .buttonfb, .buttoninstagram, .Go-to-the-next-page {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
 </head>
-<body class="container">
-     <img src="images/uphsmolino.jpg" alt="school">
-     <section>
-        <h1>SPECIALIZED;</h1> 
-        <h2>The specific area that i wanted to specialize in my course is the  Computer Programming Language <br>
-            because i want to explore more about programming  cause i think <br>
-            i do not have enough knowledge about this that's why <br>
-            my curiosity bring's me here like how to develop something using programming languages.</h2>
-        <h1>PHILOSOPHY:</h1> 
-        <h2>''Educating the mind without educating your heart is no education at all''- Aristotle</h2>
- </section>
-        <h1> CONTACT INFORMATION</h1>
-        <h2>Phone Number; 09501053754</h2>
-        <a href="https://www.facebook.com/profile.php?id=100082965547439&mibextid=ZbWKw" class="buttonfb"><button class="buttonfb">Facebook</button></a><br>
-        <a href="https://www.instagram.com/jclynbyln_?igsh=MTNlOHFtbG5lZWtpYg=" class="buttonIg"><Button class="buttonIg">Instagram</Button></a><br>
-        <a href="index.html" title="index.html" class=" button"><Button>Back</Button></a>
-    </body> 
+<body>
+  <header>
+    <h1>My Personal Web Design</h1>
+    <h2>Welcome to my personal page where I explore the world of computer programming and Data Science!</h2>
+  </header>
+
+  <section>
+    <h2>My Personal Web Design</h2>
+    <p>The specific area that I wanted to specialize in my course is the Computer Programming Language<br>
+      because I want to explore more about programming since I feel I do not have enough knowledge<br>
+      about this area. That's why my curiosity brought me here to learn how to develop something using programming languages.</p>
+
+    <h2>Philosophy</h2>
+    <p>"Educating the mind without educating the heart is no education at all" - Aristotle</p>
+  </section>
+
+  <h2>Contact Information</h2>
+  <h3>Phone number: 09501053754</h3>
+
+  <a href="https://www.facebook.com/jocelyn.parane.2024?mibextid=ZbWKwL" class="buttonfb">Facebook</a>
+  <a href="https://www.instagram.com/jcbyln_?igsh=MTNlOHFtbG5lZWtpYg==" class="buttoninstagram">Instagram</a>
+  <a href="index.html" class="Go-to-the-next-page"><button>Go to Home</button></a>
+
+  <footer>
+    <p>&copy; 2024 Jocelyn B. Parane | All Rights Reserved</p>
+  </footer>
+</body>
 </html>
