@@ -1,42 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Web Design</title>
-    <link rel="stylesheet" href="style.css"> 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.body.classList.add("fade-in");
-            
-            const links = document.querySelectorAll("a");
-            links.forEach(link => {
-                link.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    const url = this.getAttribute("href");
-                    document.body.classList.add("fade-out");
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Web Design</title>
+  <style>
+ 
+    body {
+      font-family: 'Georgia', serif; 
+      background-color: #f7f1e1; 
+      color: #4e4a4a; 
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-image: url('https://www.transparenttextures.com/patterns/old-wall-2.png');
+      background-repeat: repeat;
+    }
+
     
-                    setTimeout(() => {
-                        window.location.href = url;
-                    }, 500); 
-                });
-            });
-        });
-    </script> 
+    header {
+      background-color: #bfa68d; 
+      padding: 50px 0;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      font-style: italic;
+      font-family: 'Times New Roman', serif;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      border: 5px solid #bfa68d;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-family: 'Georgia', serif;
+      color: #5f4b3a;
+    }
+
+    section p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #3e3b3b;
+    }
+
+    .button {
+      background-color: #8f6a33; 
+      color: #fff;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 25px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #7a5730; 
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #bfa68d;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      .profile-img {
+        width: 150px;
+        height: 150px;
+      }
+
+      section h2 {
+        font-size: 24px;
+      }
+
+      .button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
 </head>
-<body class="container-one">
-     <img src="images/uphsmolino.jpg" alt="school">
-    
-      <h1>My Personal Web Design</h1>
+<body>
 
-    <header>  
-        <h1>My Profile</h1>
-        <h2> My Name is Jocelyn B. Parane and i'm a first year college student of <br>
-            Bachelor of Science in Computer Science- Data Science <br>
-            at  the University of Perpetual  Help System Dalta - Molino Campus<br>
-            and i'm from Antipolo City but currently live in Imus Cavite. </h2> 
+  <header>
+    <h1>My Profile</h1>
+    <img src="me.jpg" alt="Your Name" class="profile-img">
+    <h2>My Name is Jocelyn B. Parane, and I'm a first-year college student of <br>
+        Bachelor of Science in Computer Science - Data Science <br>
+        at the University of Perpetual Help System Dalta - Molino Campus.<br>
+        I'm from Antipolo City but currently living in Imus Cavite.</h2>
+  </header>
 
-        </p>
-    <a href="parane.html" title="parane.html" class="button"><Button>NEXT</Button></a> 
+  <section>
+    <h2>About Me</h2>
+    <p>Hi, I’m Jocelyn B. Parane. I’m passionate about exploring the world of computer science, especially in the field of Data Science. I love learning new programming languages and developing creative solutions to complex problems. I am eager to continue expanding my knowledge and skills in technology.</p>
+
+    <h2>Contact Information</h2>
+    <p>If you’d like to reach out or collaborate, feel free to contact me through the following platforms:</p>
+    <a href="parane.html" title="parane.html" class="button"><Button>Go to the next page</Button></a> 
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Jocelyn B. Parane | All Rights Reserved</p>
+  </footer>
+
 </body>
-</html> 
+</html>
+
